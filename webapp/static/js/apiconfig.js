@@ -1,2 +1,12 @@
-/** kitadmin-v1.2.4 MIT License By http://kit.zhengjinfan.cn Author Van Zheng */
-;"use strict";layui.define(function(e){var s="/api/";e("apiconfig",{user:{login:s+"user/login",getUsers:s+"user/getusers",getMenus:s+"getmenus"}})});
+layui.define(function (exports) {
+
+    const baseUrl = '/api/';
+    const apiconfig = {
+        user: {
+            login: baseUrl + 'user/login',
+            getUsers: baseUrl + 'user/getusers',
+            getMenus: baseUrl + 'getmenus',
+        }
+    };
+    exports('apiconfig', apiconfig);
+});

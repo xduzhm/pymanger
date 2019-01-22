@@ -1,2 +1,17 @@
 /** kitadmin-v1.2.4 MIT License By http://kit.zhengjinfan.cn Author Van Zheng */
-#app{position:relative}
+#app{
+    position:relative
+}
+
+.layui-fluid {
+    padding: 15px;
+}
+
+.card-top-border {
+    border-top: 2px solid #00a65a;
+    padding-top: 5px;
+}
+
+[v-cloak] {
+    display: none;
+}

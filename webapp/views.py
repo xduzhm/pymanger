@@ -1,4 +1,4 @@
-from django.http import HttpRequest
+from django.http import HttpRequest, HttpResponse, JsonResponse
 from django.shortcuts import render, render_to_response
 
 
@@ -15,5 +15,9 @@ def view(request, views):
     return render(request, '%s.html' % (views))
 
 
-def directory(request, directory, views):
-    return render(request, '%s/%s.html' % (directory, views))
+def directory(request, direct, views):
+    return render(request, '%s/%s.html' % (direct, views))
+
+
+def resource_list(request):
+    return JsonResponse({})
